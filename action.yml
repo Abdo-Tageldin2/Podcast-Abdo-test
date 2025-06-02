@@ -1,12 +1,12 @@
-name:"podcast Generator"
-author:"Abdelrahman"
-description:"Generates a feed for podcast from a Yaml file"
+name: "podcast Generator"
+author: "Abdelrahman"
+description: "Generates a feed for podcast from a Yaml file"
 runs:
-  using:"docker"
+  using: "docker"
   image: "Dockerfile"
 branding:
-  icon:"git-branch"
-  colour:"red"
+  icon: "git-branch"
+  colour: "red"
 inputs:
   email:
     description: the comiter's email address

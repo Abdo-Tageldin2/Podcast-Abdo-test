@@ -6,7 +6,7 @@ runs:
   image: "Dockerfile"
 branding:
   icon: "git-branch"
-  colour: "red"
+  color: "red"
 inputs:
   email:
     description: the comiter's email address

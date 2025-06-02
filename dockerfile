@@ -1,9 +1,9 @@
 FROM ubuntu:latest
 
-# Update and install required packages
+# Update package list and install required packages
 RUN apt-get update && \
     apt-get install -y \
-        python3.10 \
+        python3.10-full \
         python3-pip \
         git \
         build-essential \
@@ -15,7 +15,7 @@ RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
 # Make sure pip is up to date
 RUN python3 -m pip install --upgrade pip
 
-# Now install PyYAML using the correct pip
+# Install PyYAML
 RUN pip install PyYAML
 
 # Copy files
